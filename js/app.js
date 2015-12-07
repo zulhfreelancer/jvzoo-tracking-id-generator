@@ -43,7 +43,7 @@ function generateUrl() {
   }
 
   function generateUrl() {
-    aff_url = url + tracking_id.toLowerCase();
+    aff_url = url + "?tid=" + tracking_id.toLowerCase();
     console.log(aff_url);
 
     $("#result-section").show();
