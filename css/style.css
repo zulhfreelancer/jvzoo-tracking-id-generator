@@ -1,0 +1,14 @@
+input, button, .btn {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  border: none !important;
+}
+
+#copyBtn {
+  margin-top: 30px;
+}

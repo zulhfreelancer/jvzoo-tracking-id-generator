@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JV Zoo Tracking ID Generator</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">    
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <br><br>
+          <p class="text-center">Learn more about JvZoo Tracking ID <a href="http://jvzoo.kayako.com/knowledgebase/article/View/20/3/how-to-set-up-tracking-ids" target="_blank">here</a>.</p>
+          <form>
+            <div class="form-group">
+              <label>Your Affiliate URL</label>
+              <input type="text" class="form-control" id="url" placeholder="Eg: http://jvz1.com/c/253217/172307">
+            </div>
+            <div class="form-group">
+              <label>Tracking ID</label>
+              <input type="text" class="form-control" id="tracking_id" placeholder="facebookads">
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="generateUrl()">Generate URL</button>
+          </form>
+
+          <br>
+
+          <div class="row" id="result-section" style="display:none;">
+            <div class="col-md-10">
+              <label>Your New Affiliate URL</label>
+              <pre id="result"></pre>
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-success" type="button" id="copyBtn">Copy</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/string.min.js"></script>
+    <script type="text/javascript" src="js/jquery.zeroclipboard.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+</html>
